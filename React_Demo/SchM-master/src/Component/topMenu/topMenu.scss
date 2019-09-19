@@ -1,0 +1,60 @@
+.top-menu{
+  display: flex;
+  align-items: center;
+  padding: 0 .5rem;
+  height: 2.35rem;
+  background-color: rgb(243,244,246);
+  & > div{
+    flex: 1;
+    div{
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  .top-menu-setting{
+    height: .65rem;
+    div{
+      width: .65rem;
+      height: 100%;
+      background-image: url("@/Img/setting.png");
+    }
+  }
+  .top-menu-date{
+    text-align: center;
+    font-size: .65rem;
+  }
+  .top-menu-serch{
+    height: .56rem;
+    text-align: right;
+    div{
+      display: inline-block;
+      width: .56rem;
+      height: 100%;
+      background-image: url("@/Img/serch.png");
+    }
+  }
+  .top-menu-close{
+    height: .48rem;
+    div{
+      width: .48rem;
+      height: 100%;
+      background-image: url("@/Img/close.png");
+    }
+  }
+  .top-menu-confirm{
+    height: .48rem;
+    text-align: right;
+    div{
+      display: inline-block;
+      width: .6rem;
+      height: 100%;
+      background-image: url("@/Img/confirm.png");
+    }
+  }
+  .top-menu-time{
+    font-size: .48rem;
+  }
+}
+.top-menu-new-sch{
+  background-color: #fff;
+}

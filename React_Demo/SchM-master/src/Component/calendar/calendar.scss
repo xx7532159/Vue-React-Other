@@ -1,0 +1,83 @@
+@import 'variable';
+.calendar{
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  //height: 13.88rem;
+  //overflow: hidden;
+  .cd-head{
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid $grey;
+    border-top: 1px solid $grey;
+  }
+  .cd-content{
+    //height: 2.6rem;
+    border-bottom: 1px solid $grey;
+  }
+  .cd-head, .cd-content{
+    display: flex;
+    & > div{
+      flex: 1;
+      border-left: 1px solid $grey;
+    }
+    div:first-child{
+      border-left: none;
+    }
+  }
+  .cd-day-box-active{
+    background-color: $lightBlue;
+  }
+  .cd-day-box-click-active{
+    margin-bottom: -1px;
+    background-color: $lightGrey;
+  }
+  .cd-day-box-sch{
+    margin: 3px 1px 0;
+    height: 20px;
+    line-height: 20px;
+  }
+  .cd-sch-detail{
+    border-bottom: 1px solid $grey;
+    background-color: $lightGrey;
+    position: relative;
+    font-size: 16px;
+    .cd-sch-detail-add{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      height: 16px;
+      line-height: 100%;
+    }
+    .cd-sch-detail-item{
+      display: flex;
+      align-items: center;
+      height: 25%;
+    }
+    .cd-sch-detail-line{
+      flex: 1;
+      height: 30%;
+      div{
+        width: 5px;
+        height: 100%;
+      }
+    }
+    .cd-sch-detail-time{
+      flex: 2;
+    }
+    .cd-sch-detail-theme{
+      flex: 8;
+    }
+  }
+}

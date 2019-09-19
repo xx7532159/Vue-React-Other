@@ -1,0 +1,9 @@
+.am-picker-popup-item{
+    font-size: 16px;
+}
+.am-picker-col-item{
+ font-size: 20px;
+}
+.am-picker-item:first-child{
+    flex: 2;
+}
