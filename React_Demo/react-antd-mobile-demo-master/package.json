@@ -15,7 +15,7 @@
     "demo"
   ],
   "devDependencies": {
-    "babel-core": "6.4.5",
+    "babel-core": "6.26.3",
     "babel-eslint": "6.0.0",
     "babel-loader": "6.2.1",
     "babel-plugin-antd": "0.4.1",
